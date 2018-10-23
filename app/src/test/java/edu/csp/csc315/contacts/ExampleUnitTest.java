@@ -1,4 +1,4 @@
-package com.example.nguyen__le.googlemaps;
+package edu.csp.csc315.contacts;
 
 import org.junit.Test;
 

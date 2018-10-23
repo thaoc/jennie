@@ -7,7 +7,7 @@
     tools:context=".AddContact">
 
     <TextView
-        android:id="@+id/updateName"
+        android:id="@+id/updateContactName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -28,11 +28,11 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/updateName"
-        app:layout_constraintTop_toBottomOf="@+id/updateName" />
+        app:layout_constraintStart_toStartOf="@+id/updateContactName"
+        app:layout_constraintTop_toBottomOf="@+id/updateContactName" />
 
     <TextView
-        android:id="@+id/updatePhone"
+        android:id="@+id/updateContactPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -43,8 +43,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updateNameText" />
 
+    <EditText
+        android:id="@+id/updatePhoneText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName|phone"
+        app:layout_constraintStart_toStartOf="@+id/updateContactPhone"
+        app:layout_constraintTop_toBottomOf="@+id/updateContactPhone" />
+
     <TextView
-        android:id="@+id/updateAddress"
+        android:id="@+id/updateContactAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -65,63 +75,35 @@
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/updateAddress"
-        app:layout_constraintTop_toBottomOf="@+id/updateAddress" />
+        app:layout_constraintStart_toStartOf="@+id/updateContactAddress"
+        app:layout_constraintTop_toBottomOf="@+id/updateContactAddress" />
 
     <Button
-        android:id="@+id/uppdateButton"
+        android:id="@+id/updateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Update"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updateAddressText" />
 
     <Button
-        android:id="@+id/updateCallButton"
+        android:id="@+id/callButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="156dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Call"
+        app:layout_constraintBottom_toBottomOf="@+id/updatePhoneText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toEndOf="@+id/updatePhoneText"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/updatePhoneText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/updatePhone" />
-
-    <TextView
-        android:id="@+id/updateRow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="1"
-        android:textSize="30sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/updatePhoneText" />
 
 </android.support.constraint.ConstraintLayout>

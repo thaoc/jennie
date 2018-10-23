@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
     tools:context=".AddContact">
 
     <TextView
-        android:id="@+id/contactName1"
+        android:id="@+id/addContactName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/addname"
+        android:id="@+id/addNameText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -28,11 +28,11 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/contactName1"
-        app:layout_constraintTop_toBottomOf="@+id/contactName1" />
+        app:layout_constraintStart_toStartOf="@+id/addContactName"
+        app:layout_constraintTop_toBottomOf="@+id/addContactName" />
 
     <TextView
-        android:id="@+id/contactPhone"
+        android:id="@+id/addContactPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -41,10 +41,10 @@
         android:text="Phone"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addname" />
+        app:layout_constraintTop_toBottomOf="@+id/addNameText" />
 
     <EditText
-        android:id="@+id/addPhone"
+        android:id="@+id/addPhoneText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -53,11 +53,11 @@
         android:ems="10"
         android:inputType="textPersonName|phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/contactPhone"
-        app:layout_constraintTop_toBottomOf="@+id/contactPhone" />
+        app:layout_constraintStart_toStartOf="@+id/addContactPhone"
+        app:layout_constraintTop_toBottomOf="@+id/addContactPhone" />
 
     <TextView
-        android:id="@+id/contactAddress"
+        android:id="@+id/addContactAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -66,10 +66,10 @@
         android:text="Address"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/addPhoneText" />
 
     <EditText
-        android:id="@+id/addAddress"
+        android:id="@+id/addAddressText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -78,11 +78,11 @@
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/contactAddress"
-        app:layout_constraintTop_toBottomOf="@+id/contactAddress" />
+        app:layout_constraintStart_toStartOf="@+id/addContactAddress"
+        app:layout_constraintTop_toBottomOf="@+id/addContactAddress" />
 
     <TextView
-        android:id="@+id/contactNote"
+        android:id="@+id/addContactNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -91,49 +91,40 @@
         android:text="Notes"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/addAddressText" />
 
     <EditText
-        android:id="@+id/addNote"
+        android:id="@+id/addNoteText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/contactNote"
-        app:layout_constraintTop_toBottomOf="@+id/contactNote" />
+        app:layout_constraintStart_toStartOf="@+id/addContactNote"
+        app:layout_constraintTop_toBottomOf="@+id/addContactNote" />
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:layout_marginLeft="9dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="24dp"
         android:text="Save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.236"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addNote" />
+        app:layout_constraintTop_toBottomOf="@+id/addNoteText" />
 
     <Button
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:text="Cancel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addNote" />
-
+        app:layout_constraintTop_toBottomOf="@+id/addNoteText" />
 </android.support.constraint.ConstraintLayout>

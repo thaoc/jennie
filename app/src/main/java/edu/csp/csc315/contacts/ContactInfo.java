@@ -1,13 +1,13 @@
-package com.example.nguyen__le.googlemaps;
+package edu.csp.csc315.contacts;
 
-public class Contact {
+public class ContactInfo {
 
     String name;
     String phoneNumber;
     String address;
     String notes;
 
-    public Contact(String name, String phoneNumber, String address, String notes){
+    public ContactInfo(String name, String phoneNumber, String address, String notes){
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.address = address;

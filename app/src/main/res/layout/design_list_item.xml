@@ -10,22 +10,24 @@
     android:id="@+id/parent_layout">
 
     <TextView
-        android:id="@+id/contactName1"
+        android:id="@+id/addContactName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="Jennie Le"
+        android:text="Micheal Brown"
         android:textColor="#000"
         android:textSize="22sp" />
 
     <TextView
-        android:id="@+id/phoneNumber1"
+        android:id="@+id/designNumberText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@id/contactName1"
-        android:text="651-232-2213"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@id/addContactName"
+        android:text="651-243-3242"
         android:textColor="#000"
         android:textSize="22sp" />
+
 
 </RelativeLayout>
